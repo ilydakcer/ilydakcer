@@ -1,16 +1,66 @@
-## Hi there 👋
+Harmony Archive
+PWA – Dönem Sonu Projesi
+Proje Açıklaması
 
-<!--
-**ilydakcer/ilydakcer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Harmony Archive, MusicBrainz API kullanılarak geliştirilmiş,
+bir müzik stüdyosu / sanatçı ajansı için tasarlanmış
+çok sayfalı, kurulabilir ve offline çalışabilen bir web uygulamasıdır.
+Proje, Web Tabanlı Mobil Uygulama Geliştirme dersi kapsamında hazırlanmıştır.
 
-Here are some ideas to get you started:
+Kullanılan API
+MusicBrainz API
+https://musicbrainz.org/doc/MusicBrainz_API
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Örnek Endpointler
+Sanatçı arama
+https://musicbrainz.org/ws/2/artist/?query=rock&fmt=json
+
+Sanatçı albümleri
+https://musicbrainz.org/ws/2/release?artist={artistId}&fmt=json
+
+Sayfa Yapısı (Multi-Page)
+index.html → Ana sayfa
+artists.html → Sanatçı listesi
+detail.html → Sanatçı detay / albümler
+about.html → Hakkımızda
+contact.html → İletişim formu
+offline.html → Offline ekranı
+Her sayfa ayrı bir HTML dosyasıdır.
+
+CSS Framework
+Bootstrap 5 (CDN)
+https://getbootstrap.com/
+Bootstrap grid sistemi ve bileşenleri kullanılmıştır.
+Ek olarak css/style.css dosyasında özel stiller yazılmıştır.
+
+PWA Özellikleri
+Manifest dosyası (manifest.json)
+Service Worker
+Offline çalışma (offline.html)
+App Shell cache
+Install edilebilir (standalone)
+
+Offline Senaryosu
+İnternet bağlantısı yoksa offline.html gösterilir
+API erişilemezse /data/sample.json üzerinden örnek veri kullanılır
+Kullanıcı bilgilendirilir
+
+Canlı Demo
+Canlı Uygulama:
+BURAYA CANLI DEMO LİNKİ
+
+Tanıtım Videosu
+Demo Video:
+BURAYA VIDEO LİNKİ
+
+Videoda:
+API’den veri çekilmesi
+Arama özelliği
+Detay sayfası
+Offline çalışma
+Install edilebilirlik
+gösterilmektedir.
+Geliştirici
+
+İlayda Koçer
+Üniversite 2. Sınıf – Ön Yüz (Front-End) Yazılım Geliştirme
